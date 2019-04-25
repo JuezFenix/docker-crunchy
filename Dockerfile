@@ -19,5 +19,6 @@ VOLUME ["/downloads"]
 WORKDIR /downloads
 
 COPY crunchy.sh /crunchy.sh
+RUN chmod +x /crunchy.sh
 
 ENTRYPOINT [ "/crunchy.sh" ]
