@@ -148,7 +148,6 @@ if [ -n "${BATCH}" ]
 then
         crunchy ${USERNAME} ${PASSWORD} ${BATCH} ${OUTPUT} ${RESOLUTION} ${FORMAT}
 else
-then
     	if [ -n "${EPISODES}" ]
 	then
                 crunchy ${USERNAME} ${PASSWORD} ${INPUT} ${EPISODES} ${OUTPUT} ${RESOLUTION} ${FORMAT}
