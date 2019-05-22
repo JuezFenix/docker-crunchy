@@ -12,7 +12,7 @@ PASSWORD="" # Default: "" (Means guest session if username is not specific).
 # By command line, it is "-r value" or "--resolution value".
 # Default: "" (Means best resolution).
 # Change to other value as "worst", "240p", "360p", "480p", "720p", "1080p", "best".
-RESOLUTION="1080p"
+RESOLUTION="1080"
 
 # This argument sets the episodes to download.
 # By command line, it is "-e <s>" or "--episodes <s>"
@@ -114,7 +114,7 @@ if [ -n "${RESOLUTION}" ]
 then
     	RESOLUTION="-r ${RESOLUTION}"
 else
-    	RESOLUTION="-r 1080p"
+    	RESOLUTION="-r 1080"
 fi
 if [ -n "${EPISODES}" ]
 then
