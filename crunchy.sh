@@ -138,7 +138,7 @@ then
 fi
 if [ -n "${INPUT}" ]
 then
-    	INPUT="-i ${INPUT}"
+    	INPUT="${INPUT}"
 fi
 
 # MAIN...
@@ -150,9 +150,9 @@ then
 else
     	if [ -n "${EPISODES}" ]
 	then
-                crunchy ${USERNAME} ${PASSWORD} ${INPUT} ${EPISODES} ${OUTPUT} ${RESOLUTION} ${FORMAT}
+                crunchy ${USERNAME} ${PASSWORD} ${OUTPUT} ${RESOLUTION} ${FORMAT} ${INPUT} ${EPISODES} 
         else
-                crunchy ${USERNAME} ${PASSWORD} ${INPUT} ${OUTPUT} ${RESOLUTION} ${FORMAT}
+                crunchy ${USERNAME} ${PASSWORD} ${OUTPUT} ${RESOLUTION} ${FORMAT} ${INPUT}
         fi
 fi
 
